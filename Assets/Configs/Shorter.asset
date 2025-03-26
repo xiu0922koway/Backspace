@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d373c70eedcf9148b5d73e5fc574b48, type: 3}
+  m_Name: Shorter
+  m_EditorClassIdentifier: 
+  inputDialogues_0:
+  - I love you
+  - I have a crush on you.
+  - I like you. I really really like you
+  - You are very special to me, more than just a friend
+  - I want you to know that I love you
+  inputDialogues_1:
+  - I'm in love with you. It's probably not okay. but I really want to let you know
+  - Will you be my girl friend? I know you never dated a girl before. Would you like
+    to try?
+  - There is an Anteater in my house. How cute
+  - Nevermind.
+  - I'm sorry. I love you
+  - .........
+  inputDialogues_2:
+  - I love you. I don't know when it started. I only know I love you.
+  - I love you...I never told you. I'm afriad you refuse me and it will make things
+    weird. You are my best friend. I should not fall in love with you.
+  - Why can't I say it out. Why am I hesitating.
+  - I think it is the time that you got drunk and came to sleep in my place. I think
+    it starts from there. But I'm not sure.
+  - I love you. All the time I hide this from you but I can't take it any more.
+  - I love you. We are so close and I can't bare the risk to lose you. But I have
+    to say this. I really love you.
+  preDialogues: []

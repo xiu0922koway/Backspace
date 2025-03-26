@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d373c70eedcf9148b5d73e5fc574b48, type: 3}
+  m_Name: Late
+  m_EditorClassIdentifier: 
+  inputDialogues_0:
+  - I don't know how to say this to you...
+  - Nothing, just wanna check how you doing
+  - Would you like to hang out tomorrow? It'll be better if I tell you in person
+  - I'm not sure
+  inputDialogues_1:
+  - .........
+  - I love you
+  - Nevermind...
+  - There is an anteater in my house! How cute
+  - I love you. I really really love you
+  - You are very special to me, it's more than friendship
+  - I'm in love with you. It's probably not okay. but I really want to let you know
+  inputDialogues_2:
+  - I love you...I never told you. I'm afriad you refuse me and it will make things
+    weird. You are my best friend. I should not fall in love with you.
+  - Why can't I say it out. Why am I hesitating.
+  - Do you remember the time that you got drunk and came to sleep in my place. I
+    fall in love with you at that night.
+  - I love you. We are so close and I can't bare the risk to lose you. But I have
+    to say this. I really love you.
+  - Will you be my girl friend? I know you never dated a girl before. Would you like
+    to try? with me?
+  - I love you. I'm sorry that I hide this all the time. But I can't pretend to just
+    be your friend anymore. I love you
+  preDialogues: []
