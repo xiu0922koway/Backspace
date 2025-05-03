@@ -23,6 +23,10 @@ public class StartMenu : MonoBehaviour
     private float buttonTimer = 0;
     private bool firstHold = false;
 
+    public bool isChinese;
+    public float cnTypeSoundTime = 0.075f;
+    private float cnTypeSoundTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +39,10 @@ public class StartMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SteamAchievement.UnloadAchievement("ACH_END");
-        }
+        // if(Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     //SteamAchievement.UnloadAchievement("ACH_END");
+        // }
         
         if(Input.GetKeyDown(KeyCode.Escape))
         {
@@ -115,8 +119,19 @@ public class StartMenu : MonoBehaviour
                 else
                 {
                     TMP.text += texts[index][TMP.text.Length];
-                    if(TMP.text[TMP.text.Length-1] != ' ') AudioManager.Instance.PlayOneShot(0, Random.Range(0.1f,0.3f));
+                    if(!isChinese)
+                        if(TMP.text[TMP.text.Length-1] != ' ') AudioManager.Instance.PlayOneShot(0, Random.Range(0.1f,0.3f));
                     typeTimer = 0;
+                }
+
+                if(isChinese)
+                {
+                    cnTypeSoundTimer += Time.deltaTime;
+                    if(cnTypeSoundTimer > cnTypeSoundTime)
+                    {
+                        AudioManager.Instance.PlayOneShot(0, Random.Range(0.1f,0.3f));
+                        cnTypeSoundTimer = 0;
+                    }
                 }
             }
         }

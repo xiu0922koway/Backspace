@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class Backspace : MonoBehaviour
 {
+    public bool isChinese;
+    public float cnTypeSoundTime = 0.075f;
+    private float cnTypeSoundTimer;
     public Text_Config textConfig;
     private List<string> inputDialogues;
     public TextRolling textRolling;
@@ -125,14 +128,32 @@ public class Backspace : MonoBehaviour
                 if(typeTimer < typeTime)
                 {
                     typeTimer += Time.deltaTime;
+                                  
                 }
                 else
                 {
                     TMP.text += inputDialogues[currentIndex][TMP.text.Length];
-                    if(TMP.text[TMP.text.Length-1] != ' ') AudioManager.Instance.PlayOneShot(0, Random.Range(0.1f,0.3f));
+                    if(!isChinese)
+                        if(TMP.text[TMP.text.Length-1] != ' ') AudioManager.Instance.PlayOneShot(0, Random.Range(0.1f,0.3f));
+
                     typeTimer = 0;
+                    
+                }
+                
+                if(isChinese)
+                {
+                    cnTypeSoundTimer += Time.deltaTime;
+                    if(cnTypeSoundTimer > cnTypeSoundTime)
+                    {
+                        AudioManager.Instance.PlayOneShot(0, Random.Range(0.1f,0.3f));
+                        cnTypeSoundTimer = 0;
+                    }
                 }
             }
+            else
+            {
+                if(isChinese) cnTypeSoundTimer = 0;
+            }     
         }
 
         if(unlockEnter)
@@ -155,7 +176,7 @@ public class Backspace : MonoBehaviour
                 TMP.text = "";
                 realEnd = true;
 
-                SteamAchievement.UnloadAchievement("ACH_END");
+                //SteamAchievement.UnloadAchievement("ACH_END");
             }
         }
     }
@@ -188,7 +209,8 @@ public class Backspace : MonoBehaviour
                 if(!isEnd && !unlockEnter)
                 {
                     isEnd = true;
-                    inputDialogues.Add("Good Night...");
+                    if(!isChinese)inputDialogues.Add("Good Night...");
+                    else inputDialogues.Add("晚安...");
                     preDialogues[2].gameObject.SetActive(true);
                     waitTimer = -8;
                     unlockEnter = true;

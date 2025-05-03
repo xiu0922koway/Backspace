@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018d5c8e022bbf343810c7026f3a6be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textConfig: {fileID: 11400000, guid: a9276ad5ecbb44445a18776a547afd23, type: 2}
+  textConfig: {fileID: 11400000, guid: 71099c07969324b418a361b7ccaf1a9f, type: 2}
   textRolling: {fileID: 789145240}
   TMP: {fileID: 638426628}
   preDialogues:
