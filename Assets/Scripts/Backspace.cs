@@ -173,9 +173,15 @@ public class Backspace : MonoBehaviour
 
                 AudioManager.Instance.PlayOneShot(3, 0.4f);
 
+                SteamScript.Instance.CheckACH(0);
+                if(TMP.text == "I love you" || TMP.text == "I love you." || TMP.text == "I love you. " || TMP.text == "I love you.." || TMP.text == "I love you...")
+                {
+                    Debug.Log("I love you");
+                    SteamScript.Instance.CheckACH(1);
+                }
+
                 TMP.text = "";
                 realEnd = true;
-
                 //SteamAchievement.UnloadAchievement("ACH_END");
             }
         }
@@ -214,6 +220,9 @@ public class Backspace : MonoBehaviour
                     preDialogues[2].gameObject.SetActive(true);
                     waitTimer = -8;
                     unlockEnter = true;
+
+                    SteamScript.Instance.CheckACH(2);
+
                 }
                 else if(isEnd && unlockEnter)
                 {

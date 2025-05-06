@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   inputDialogues_0:
-  - I have a crush on you.
+  - I love you
   inputDialogues_1:
   - Nevermind.
   inputDialogues_2:
