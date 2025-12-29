@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputDialogues_0:
   - I love you
-  - I have a crush on you.
+  - I have a crush on you...
+  - I like you. I really really like you
+  - You are very special to me, it's more than friendship
+  typingCurves_0: []
+  alternativeDialogues_0:
+  - I hate dad
+  - I have a crush on you...
   - I like you. I really really like you
   - You are very special to me, it's more than friendship
   inputDialogues_1:
@@ -23,6 +29,8 @@ MonoBehaviour:
   - Nevermind.
   - I'm sorry. I love you
   - .........
+  typingCurves_1: []
+  alternativeDialogues_1: []
   inputDialogues_2:
   - I love you...I never told you. I'm afriad you refuse me and it will make things
     weird. You are my best friend. I should not fall in love with you.
@@ -34,4 +42,6 @@ MonoBehaviour:
     to try, with me
   - I love you. I'm sorry that I hide this all the time. But I can't pretend to just
     be your friend anymore. I love you
+  typingCurves_2: []
+  alternativeDialogues_2: []
   preDialogues: []
